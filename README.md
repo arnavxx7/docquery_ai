@@ -1,14 +1,11 @@
-Here is a professional and concise `README.md` for your GitHub repository.
 
----
-
-# DocQuery AI 📄🤖
+# DocQuery AI 📄
 
 **DocQuery AI** is a locally hosted, Retrieval-Augmented Generation (RAG) application that enables users to upload PDF documents and engage in context-aware conversations.
 
 By leveraging **Ollama (Llama 3.1)** for local inference and a robust **Celery + Redis** backend for asynchronous processing, the application ensures high performance without compromising user privacy.
 
-## 🏗 System Architecture
+##  System Architecture
 
 The project implements a hybrid architecture to handle resource-intensive tasks and real-time interaction efficiently:
 
@@ -27,7 +24,7 @@ The project implements a hybrid architecture to handle resource-intensive tasks 
 
 
 
-## 🚀 Key Features
+## Key Features
 
 * **Local RAG Implementation:** fast and private document analysis using local LLMs.
 * **Smart Ingestion:** Efficient text splitting and deduplication logic prevents redundant data in the vector store.
@@ -35,7 +32,7 @@ The project implements a hybrid architecture to handle resource-intensive tasks 
 * **Real-time Streaming:** WebSockets enable token-by-token response generation.
 * **Interactive UI:** Clean HTML/TailwindCSS interface with live processing status and chat history.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * **Backend:** FastAPI, Python 3.x
 * **Task Queue:** Celery, Redis
@@ -44,7 +41,7 @@ The project implements a hybrid architecture to handle resource-intensive tasks 
 * **Embeddings:** HuggingFace (`sentence-transformers/all-MiniLM-L6-v2`)
 * **Frontend:** HTML5, JavaScript, TailwindCSS
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 **Prerequisites:**
 

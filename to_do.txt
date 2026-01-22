@@ -1,0 +1,15 @@
+Fastapi handles backend
+
+2 routes:
+1) /upload
+Upload the pdf 
+Receives the file upload, pushes a job to redis, returns 200 OK processing in background
+
+Celery worker: PyPdf strip text from pages, chunking, embedding, storage in vectordb
+mark sucess in redis, frontend shows ready
+
+2) /chat
+user query -> embed -> send to qdrant -> returns top 3 relevant paragraphs -> fastapi creates prompt
+sends prompt to ollama container
+ollama loads compressed model
+ollama streams response -> fastapi -> websocket -> react frontend

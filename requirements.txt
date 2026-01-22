@@ -1,0 +1,13 @@
+python-magic-bin
+celery
+redis
+langchain-community
+pypdf
+numpy<2
+langchain-text-splitters
+langchain-huggingface
+langchain-ollama
+sentence_transformers
+langchain-chroma
+tf-keras
+boto3
